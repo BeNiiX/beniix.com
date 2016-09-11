@@ -1,0 +1,207 @@
+@keyframes menu {
+    from { 
+        transform: scale(10, 0);
+    }
+    to {
+        transform: scale(10, 10);
+    }
+}
+
+.menu_animer {
+    position: absolute;
+    /*visibility: hidden;*/
+    transform: scale(10, 0);
+}
+
+.menu_animer2:hover .menu_animer {
+    animation: menu 2s ease;
+    /*visibility: visible;*/
+    animation-fill-mode: forwards;
+}
+
+
+@font-face {
+    font-family: "steelfish";
+    src: url('steelfish.ttf');
+}
+body {
+	color:black;
+	background-image:url(images/bg.png);
+	font-family: 'steelfish';
+	background-attachment: fixed;
+}
+
+
+#menu-deroulant, #menu-deroulant ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 26px;
+    border: 1px;
+    border-color: black;
+
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+    background-color: #f27800;
+    border: 2px;
+    border-color: black;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+    background-color: #f27800;
+    padding: 5px;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant > li:nth-child(1) > a {
+	margin-right: 40px;
+}
+#menu-deroulant {
+	   padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#slider {
+	text-align: center;
+	font-size: 20px;
+	background-color: #f27400; 
+	padding-bottom: 50px;
+}
+#ejs_photo_box > center > img {
+	width: 900px;
+	border: solid 5px black;
+}
+#slider p {
+	padding-top: 20px;
+	color: black;
+	margin: 0px;
+}
+
+
+body > #table {
+	background-color: #f27800;
+}
+body > #table > center > p {
+	color: #f27800;
+	font-size: 20px;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+body > #table > center:nth-child(1) > table {
+	text-align: center;
+	font-size: 64px;
+	color: black;
+
+}
+body > #table > center:nth-child(3) {
+	padding-bottom: 50px;
+}
+body > #table > center:nth-child(1) > table > tbody > tr > td:nth-child(1) {
+	padding-right: 175px;
+}
+body > #table > center:nth-child(1) > table > tbody > tr > td:nth-child(2) {
+	padding-right: 175px;
+}
+body > #table > center:nth-child(3) > table > tbody > tr > td:nth-child(1){
+	padding-right: 275px;
+}
+body > #table > center:nth-child(3) > table > tbody > tr > td:nth-child(2){
+	padding-right: 285px;
+}
+body > #table > center:nth-child(3)
+
+}
+body > #table > center:nth-child(2) > table {
+	text-align: center;
+}
+body > #table > center:nth-child(2) > table > tbody > tr > td:nth-child(1) {
+	width: 208px;
+	padding-right: 150px;
+}
+body > #table > center:nth-child(2) > table > tbody > tr > td:nth-child(2) {
+	width: 208px;
+	padding-right: 150px;
+}
+body > #table > center:nth-child(2) > table > tbody > tr > td:nth-child(3){
+	width: 208px;
+}
+
+
+#info {
+	background-color: black;
+	color: white;
+	margin-top: 10px;
+	font-family: 'steelfish'
+}
+#info > table {
+	padding: 20px;
+}
+#info > table > tbody > tr > td {
+	width: 200px;
+	padding: 10px;
+}
+#info > table > tbody > tr > td:nth-child(4) > a {
+	color: #f27800;
+}
+
+
+body > div:nth-child(2) {
+	margin-top: 10px;
+	background-color: #f27800;
+	padding: 40px;
+}
+
+body div#texte > p
+{
+ color: white;
+ text-align: center;
+ margin-left: 50px;
+ margin-right: 50px;
+ padding-top: 20px;
+ font-size: 64px;
+}
+body > div#texte
+{
+	background-color: black;
+	height: 200px;
+}
+#big_pict {
+	margin-bottom: 50px;
+}
+#galerie_mini > li:nth-child(1) > a > img {
+	margin-left: 20px;
+}
+#ejs_photo_box2 > center > img {
+	width: 400px;
+	border: solid 5px black;
+}
+#header > div:nth-child(2) {
+	background-color: #f27800;
+	margin-top: 40px;
+	padding: 50px;
+}
+#header > div:nth-child(2) > center:nth-child(2) {
+	margin-top: 20px;
+}
+#header > div:nth-child(2) > p {
+	text-align: center;
+	font-size: 24px;
+}
+#presentation {
+	text-align: center;
+	font-size: 24px;
+}
+p {
+	font-size: 24px;
+}

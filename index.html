@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+	<title>BeNiiX | Acceuil</title>
+	<link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+	<div id="header">
+		<div id="menu">
+			<div>
+				<img src="images/logo.png" style="position: absolute; top: 40 px; left: 100px;width: 100px; padding-top: 10px;">
+			</div>
+			<ul id="menu-deroulant">
+				<li><a href="index.html">Acceuil</a></li>
+				<li class='menu_animer2'style="margin-right: 40px;"><a href="#">Creations</a>
+					<div class='menu_animer'>
+						<li><a href="banniere.html">Banniere</a></li>
+						<li><a href="logo.html">Logo</a></li>
+					</div>
+				</li>
+				<li style="margin-right: 40px;"><a href="avant.html">Commande</a></li>
+				<li style="margin-right: 40px;"><a href="dons.html">Dons</a></li>
+				<li style="margin-right: 40px;"><a href="http://www.youtube.com" target='_blank'>Ma chaine</a></li>
+				<li><a href="avis.php">Avis</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="presentation">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/OMYRoZJOKq4" frameborder="0" allowfullscreen></iframe>
+		<p>Je me presente, BeNiiX, jeune youtuber passionne par le monde de l'informatique, du jeu video et du graphisme. Grace a ce site vous pouvez gratutitement et legalement m'envoyer vos commandes de banniere ou de logo tres rapidement et sans forcement me connaitre en skype ou IRL.</p>
+	</div>
+	<div id="slider">
+		<p>Je vous ai mis un slider, pour vous donnez un avant gout de ce que je fais ;)</p>
+		<DIV ID=ejs_photo_box></div> 
+			<SCRIPT LANGUAGE=JavaScript> 
+				ejs_photo = new Array; 
+				ejs_photo[0] = 'images/v1.jpg'; 
+				ejs_photo[1] = 'images/v2.jpg'; 
+				ejs_photo[2] = 'images/v3.jpg'; 
+				ejs_photo[3] = 'images/v4.jpg'; 
+				ejs_photo[4] = 'images/v5.jpg'; 
+
+				function ejs_aff_photos(num) 
+				{ 
+				if(document.getElementById) 
+				{ 
+				ejs_fin = ""; 
+				if(num!=0) 
+				ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num-1)+");return(false)'>< Pr&eacute;c&eacute;dent</A> "; 
+				if(num!=(ejs_photo.length-1)) 
+				ejs_fin += "<A HREF=# onClick='ejs_aff_photos("+(num+1)+");return(false)'>Suivant ></A>"; 
+				document.getElementById("ejs_photo_box").innerHTML = "<CENTER><IMG SRC='"+ejs_photo[num]+"' BORDER=0><BR>"+ejs_fin+"</CENTER>"; 
+				} 
+				} 
+				window.onload = new Function("ejs_aff_photos(0)") 
+			</script> 
+		</div>
+	<div id="table">
+		<center>
+			<p>Avec Moi tu peux etre sur que ca seras rapide, avec confiance, et c'est du minecraft ! ;)</p>	
+			<table style="margin-right: 30px;">
+		   			<!-- Ici, on écrira le contenu du tableau -->
+		   		<tr>
+			   		<td>Rapidit&eacute;</td>
+			   		<td>Confiance</td>
+			   		<td>Minecraft</td>
+		   		</tr>
+			</table>
+		</center>		
+		<center>
+			<table style="margin-right: 60px;">
+		   			<!-- Ici, on écrira le contenu du tableau -->
+		   		<tr>
+			   		<td>tu auras ta commande au bout de 2j maximum</td>
+			   		<td>Aucune escroquerie que de la confiance, pour vous servir ;)</td>
+			   		<td>C'est des bannieres minecraft assez recherchees et abouties</td>
+		   		</tr>
+			</table>
+		</center>
+		<center>
+			<table style="margin-right: 75px; ">
+		   			<!-- Ici, on écrira le contenu du tableau -->
+		   		<tr>
+			   		<td><img src="images/Rapidite.png"></td>
+			   		<td><img src="images/Confiance.png"></td>
+			   		<td><img src="images/minecraft.png"></td>
+		   		</tr>
+			</table>
+		</center>
+	
+	</div>
+	<div id="info">
+		<table>
+			<tr>
+				<td style="">N'h&eacute;site pas a me demander en skype si tu as un probleme ou autre, ou bien par mail ! Si tu veut prendre une commande je te conseille d'avoir skype, c'est le r&eacute;seau social que j'utilise le plus.</td>
+				<td style="padding-left: 150px;  padding-right: 125px;"><a href="https://www.youtube.com/channel/UCiO03kmQ79oL97ERYhCjs-Q" target="_blank"><img src="images/Youtube.png" style="width: 100px;"></A></td>
+				<td style="padding-right: 150px;" ><a href="https://twitter.com/BeNiiXxx" target="_blank"><img src="images/twitter.png" style="width: 120px;"></a></td>
+				<td>voila tout pour mon contacter: <br>- Mon twitter ( <a href="https://twitter.com/BeNiiXxx">@BeNiiXxx</a> ) <br>- Ma chaine ( <a href="https://www.youtube.com/channel/UCiO03kmQ79oL97ERYhCjs-Q">BeNiiX</a> ) <br>- mon mail beniix.contact@gmail.com<br>- Et bien sur mon skype (BeNiiX | GFX Gratuit )</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
