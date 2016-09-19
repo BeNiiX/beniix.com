@@ -1,29 +1,27 @@
 @keyframes menu {
-    from { 
-        transform: scale(10, 0);
+    from {
+    	transform: translateY(-100%);
     }
     to {
-        transform: scale(10, 10);
+    	transform: translateY(0);
     }
 }
 
 .menu_animer {
+    visibility: hidden;
     position: absolute;
-    /*visibility: hidden;*/
-    transform: scale(10, 0);
 }
 
 .menu_animer2:hover .menu_animer {
-    animation: menu 2s ease;
-    /*visibility: visible;*/
-    animation-fill-mode: forwards;
+    animation: menu 0.25s ease;
+    visibility: visible;
 }
-
 
 @font-face {
     font-family: "steelfish";
     src: url('steelfish.ttf');
 }
+
 body {
 	color:black;
 	background-image:url(images/bg.png);
